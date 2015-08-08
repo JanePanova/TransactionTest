@@ -1,0 +1,47 @@
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-4 control-label">ID</label>
+        <label class="col-sm-8 control-label" style="text-align: left">{{user.id}}</label>
+    </div>
+    <div class="form-group">
+        <label for="name" class="col-sm-4 control-label">Name</label>
+
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="name" ng-model="user.name">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-8 col-sm-offset-4">
+            <button class="btn btn-success" ng-click="updateUser()">Save info</button>
+            <button class="btn btn-danger" ng-click="deleteUser()">Delete user</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Money</label>
+        <label class="col-sm-8 control-label" style="text-align: left">{{user.wallet.money | currency}}</label>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label" for="addMoney">Amount of cash to add</label>
+
+        <div class="col-sm-8">
+            <div class="input-group">
+                <input type="number" class="form-control" placeholder="5.00" id="addMoney" ng-model="moneyToAdd">
+                <span class="input-group-btn">
+                    <button class="btn btn-default user-wallet-button" type="button" ng-click="addMoney()">Add</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label" for="withdrawMoney">Amount of cash to withdraw</label>
+
+        <div class="col-sm-8">
+            <div class="input-group">
+                <input type="number" class="form-control" placeholder="5.00" id="withdrawMoney" ng-model="moneyToWithdraw">
+                <span class="input-group-btn">
+                    <button class="btn btn-default user-wallet-button" type="button" ng-click="withdrawMoney()">Withdraw</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        List of users
+    </div>
+    <div class="panel-body">
+        It's a list of registered users and which isn't blocked
+    </div>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th class="vert-align">Id</th>
+                <th class="vert-align">Username</th>
+                <th class="vert-align">
+                    <button type="button" class="btn btn-sm btn-default pull-right" ui-sref="addUser">
+                        <span class="glyphicon glyphicon-plus-sign"></span>
+                    </button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="vert-align" ng-repeat="user in users" ui-sref="user({ id : user.id })">
+                <td class="vert-align">{{user.id}}</td>
+                <td class="vert-align" colspan="2">{{user.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="padding: 15px">
+        <button type="button" class="btn btn-default btn-block" ng-show="hasMore" ng-click="loadMore()">Load more...</button>
+    </div>
+</div>

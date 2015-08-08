@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "navbar.js",
+  "sourceRoot": "",
+  "sources": [
+    "navbar.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,UAAA;;AAAA,EAAA,UAAA,GAAa,OAAO,CAAC,MAAR,CAAe,eAAf,EAAgC,EAAhC,CAAb,CAAA;;AAAA,EAEA,UAAU,CAAC,SAAX,CAAqB,QAArB,EAA+B,SAAA,GAAA;WAC7B;AAAA,MAAA,QAAA,EAAU,GAAV;AAAA,MACA,WAAA,EAAa,uBADb;MAD6B;EAAA,CAA/B,CAFA,CAAA;AAAA"
+}

@@ -1,0 +1,16 @@
+.table tbody>tr>td.vert-align{
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.table thead>tr>th.vert-align{
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.user-wallet-button {
+    width: 90px;
+}
